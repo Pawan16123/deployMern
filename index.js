@@ -34,9 +34,9 @@ app.use('/product', productRouter);
 app.use('/order', orderRouter);
 app.use('/payment', stripeRouter);
 
-app.get('/',(req,res)=>{
-    res.send(`Your unique id is : ${uuidv4()}`);
-})
+// app.get('/',(req,res)=>{
+//     res.send(`Your unique id is : ${uuidv4()}`);
+// })
 
 // Static Files
 app.use(express.static(path.join(__dirname, './client/build')));
